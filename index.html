@@ -3,6 +3,7 @@
 
 <head>
   <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico|Source+Sans+Pro:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400|Josefin+Sans:300,400,600" rel="stylesheet">
   <style type="text/css">
@@ -49,15 +50,26 @@
     font-family: 'Josefin Sans';
     font-size: 90px;
     font-weight: 900;
-  card{
-    width: 130px;
-    height: 195px;
-    background: url("images/Pranav_Khadpe.jpg") no-repeat;
-    display: inline-block;
   }
-  card:hover{
-    background: url("images/hover.jpg") no-repeat;
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
   }
+  .side {
+    flex: 120px;
+    background-color: white;
+    padding: 20px;
+  }
+  .main {
+    flex: 480px;
+    background-color: white;
+    padding: 20px;
+  }
+  @media (max-width: 1000px) {
+    .row {   
+        flex-direction: column;
+  }
+}
 </style>
 
   </style>
@@ -90,6 +102,7 @@
 </head>
 
 <body>
+
 <table width="1100" border="0" align="center" border="0" cellspacing="0" cellpadding="20">
   <tr><td>
 
@@ -101,33 +114,40 @@
     <font id="email" style="display:inline;">pranav.khadpe@gmail.com
     </font>
   </p>
-
+  
   <tr>
-    <td width="30%" align="left" valign="top"><a href="images/PranavKhadpe.jpg"><img src="images/PranavKhadpe.jpg" onmouseover="hover(this);" onmouseout="unhover(this);" width="100%" style="border-radius:15px"></a>
-    <p align=left>
-    | <a href="files/CV.pdf">CV</a> |
-    <!-- <a href="bio.text" target="_blank">Bio</a> | -->
-    <!-- <a href="https://scholar.google.cl/citations?user=AEsPCAUAAAAJ&hl=en&oi=ao">Google Scholar</a> |<br/>| -->
-    <!-- <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2019/EECS-2019-132.pdf">Phd Thesis</a> | -->
-    <!-- <a href="https://github.com/PranavKhadpe">Github</a> | -->
-    <a href="https://www.linkedin.com/in/pranav-khadpe-8b406a103/">Linkedin</a> |
-    <a href="https://twitter.com/PranavKhadpe">Twitter</a> |
-    </p>
-    </td>
-    <td width="70%" valign="top" align="justify">
-    <p>I am a 5th year undergraduate student pursuing a B.Tech and M.Tech in the Department of <a href="http://www.ee.iitkgp.ac.in/">Electrical Engineering</a> at IIT Kharagpur. I pursue interdisciplinary research with a thrust towards Human Computer Interaction and Social Computing. At IIT Kharagpur, I have had the pleasure of working with <a href="https://scholar.google.co.in/citations?user=75gf4R8AAAAJ&hl=en">Prof. Plaban Bhowmick</a>, <a href="https://cse.iitkgp.ac.in/~pawang/">Prof. Pawan Goyal</a> and <a href="http://www.facweb.iitkgp.ac.in/~ahota/index.html">Prof. Ashish Ranjan Hota</a>. I have previously interned with the HCI group at Stanford University working with <a href="https://hci.stanford.edu/msb/">Prof. Michael Bernstein</a> and <a href="http://ranjaykrishna.com/index.html">Ranjay Krishna</a> and Microsoft Research India where I worked with <a href="https://www.microsoft.com/en-us/research/people/monojitc/">Dr. Monojit Choudhury</a> and others in the Multilingual Systems Group. 
-    <!-- I was member of <a href="https://bair.berkeley.edu/">Berkeley AI Research Lab</a>, advised by <a href="http://www.cs.berkeley.edu/~trevor/">Trevor Darrell</a> and <a href="http://www.cs.berkeley.edu/~efros/">Alyosha Efros</a>. -->
-   </p>
-    <p>Information technologies have revolutionized the way we learn, work, and interact. Having relied on these systems to learn and grow, myself, I am passionate about enabling others to do so and to do so effectively. To this end, I am interested in building systems that make it easier for people to learn, work, and access information. In order to inform the design of novel systems, I am also keen on studying how people communicate and behave while engaging in these processes. Parallely, I am interested in moving beyond systems that work for some people in some contexts and building systems that more people can derive utility from, informed by an understanding of users' preferences, capacities, and resource constraints in different contexts.
-    <!-- I was member of <a href="https://bair.berkeley.edu/">Berkeley AI Research Lab</a>, advised by <a href="http://www.cs.berkeley.edu/~trevor/">Trevor Darrell</a> and <a href="http://www.cs.berkeley.edu/~efros/">Alyosha Efros</a>. -->
-    </p>
-
-    
-
-    <!-- <p> Earlier, I received a Bachelors in CS at IIT Kanpur, working with <a href="http://www.cse.iitk.ac.in/users/amit/">Amitabha Mukerjee</a>. My homepage from that time is archived <a href="iitk_website/index.html">here</a>. I have also spent time at <a href="https://www.ri.cmu.edu/">CMU RI</a>, <a href="https://research.fb.com/category/facebook-ai-research/">Facebook AI Research</a> (Seattle, Pittsburgh), and <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> (NYC).</p> -->
-    </td>
+            <div class="row">
+                    <div class="side">
+                            <p align=left>
+                            <a href="images/PranavKhadpe.jpg"><img src="images/PranavKhadpe.jpg" onmouseover="hover(this);" onmouseout="unhover(this);" width="90%" style="border-radius:15px"></a> <br><br>
+                            | <a href="files/CV.pdf">CV</a> |
+                            <!-- <a href="bio.text" target="_blank">Bio</a> | -->
+                            <!-- <a href="https://scholar.google.cl/citations?user=AEsPCAUAAAAJ&hl=en&oi=ao">Google Scholar</a> |<br/>| -->
+                            <!-- <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2019/EECS-2019-132.pdf">Phd Thesis</a> | -->
+                            <!-- <a href="https://github.com/PranavKhadpe">Github</a> | -->
+                            <a href="https://www.linkedin.com/in/pranav-khadpe-8b406a103/">Linkedin</a> |
+                            <a href="https://twitter.com/PranavKhadpe">Twitter</a> |
+                            </p>
+                      <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+                      <!-- <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                      <h3>More Text</h3>
+                      <p>Lorem ipsum dolor sit ame.</p> -->
+                      <!-- <div class="fakeimg" style="height:60px;">Image</div><br>
+                      <div class="fakeimg" style="height:60px;">Image</div><br>
+                      <div class="fakeimg" style="height:60px;">Image</div> -->
+                    </div>
+                    <div class="main">
+                            <p> I am a 5th year undergraduate student pursuing a B.Tech and M.Tech in the Department of <a href="http://www.ee.iitkgp.ac.in/">Electrical Engineering</a> at IIT Kharagpur. I pursue interdisciplinary research with a thrust towards Human Computer Interaction and Social Computing. At IIT Kharagpur, I have had the pleasure of working with <a href="https://scholar.google.co.in/citations?user=75gf4R8AAAAJ&hl=en">Prof. Plaban Bhowmick</a>, <a href="https://cse.iitkgp.ac.in/~pawang/">Prof. Pawan Goyal</a> and <a href="http://www.facweb.iitkgp.ac.in/~ahota/index.html">Prof. Ashish Ranjan Hota</a>. I have previously interned with the HCI group at Stanford University working with <a href="https://hci.stanford.edu/msb/">Prof. Michael Bernstein</a> and <a href="http://ranjaykrishna.com/index.html">Ranjay Krishna</a> and Microsoft Research India where I worked with <a href="https://www.microsoft.com/en-us/research/people/monojitc/">Dr. Monojit Choudhury</a> and others in the Multilingual Systems Group. 
+                                <!-- I was member of <a href="https://bair.berkeley.edu/">Berkeley AI Research Lab</a>, advised by <a href="http://www.cs.berkeley.edu/~trevor/">Trevor Darrell</a> and <a href="http://www.cs.berkeley.edu/~efros/">Alyosha Efros</a>. -->
+                               </p>
+                                <p>Information technologies have revolutionized the way we learn, work, and interact. Having relied on these systems to learn and grow, myself, I am passionate about enabling others to do so and to do so effectively. To this end, I am interested in building systems that make it easier for people to learn, work, and access information. In order to inform the design of novel systems, I am also keen on studying how people communicate and behave while engaging in these processes. Parallely, I am interested in moving beyond systems that work for some people in some contexts and building systems that more people can derive utility from, informed by an understanding of users' preferences, capacities, and resource constraints in different contexts.
+                                <!-- I was member of <a href="https://bair.berkeley.edu/">Berkeley AI Research Lab</a>, advised by <a href="http://www.cs.berkeley.edu/~trevor/">Trevor Darrell</a> and <a href="http://www.cs.berkeley.edu/~efros/">Alyosha Efros</a>. -->
+                                </p>
+                    </div>
+                  </div>
   </tr>
 </table>
+
 
 <table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
     <tr><td><sectionheading>&nbsp;&nbsp;Publications</sectionheading></td></tr>
