@@ -1,0 +1,120 @@
+.navbar-dark .navbar-brand{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    width: 400px;
+    font-size: 3rem;
+    color: #f3e0dc;
+    padding: 0;
+    margin: 0;
+}
+.navbar-dark .navbar-brand:hover{
+    color: #f3e0dc;
+}
+.navbar-dark .navbar-nav .nav-link{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: #f3e0dc;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: white;
+}
+
+.navbar-toggler-icon{
+    color: white;
+    content: "Hello";
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 19px;
+    line-height: 25px;
+    letter-spacing: 0.75px;
+}
+#contact{
+    text-align: center;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: #5c2018;
+    line-height: 25px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+ul{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li{
+    padding-bottom: 10px;
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+    color: #5c2018;
+    font-weight: 400;
+}
+
+a:hover{
+    color:  #5c2018;
+    text-decoration: none;
+}
+
+pre{
+    display: flex;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.pub{
+    margin-bottom: 20px; 
+}
+
+.paperimg{
+    height: 150px;
+    width: 3000px;
+    object-fit: scale-down;
+
+}
+
+
+@media (max-width: 720px) {
+    #face {   
+        max-width: 50%;
+    }
+    .navbar-brand{
+        width: 300px;
+        font-size: 2rem;
+    }
+
+}
+
+#face{
+    border-radius: 20px;
+}
+
+.navbar{
+    background-color: #bc4639;
+    color: white;
+}
+
+#connect{
+    text-align: center;
+    color: #5c2018;
+}
+
+/* .news{
+    background: #f3e0dc;
+
+} */
