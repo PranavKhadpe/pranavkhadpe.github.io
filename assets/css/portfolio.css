@@ -101,7 +101,7 @@ pre{
     #face {   
         max-width: 50%;
     }
-    .navbar-brand{
+    .navbar-dark .navbar-brand{
         width: 300px;
         font-size: 2rem;
     }
