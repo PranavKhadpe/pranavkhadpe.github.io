@@ -1,11 +1,12 @@
 .navbar-dark .navbar-brand{
     font-family: 'Raleway', sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     width: 400px;
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: #f3e0dc;
     padding: 0;
     margin: 0;
+    letter-spacing: 0.9px;
 }
 .navbar-dark .navbar-brand:hover{
     color: #f3e0dc;
@@ -14,7 +15,10 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 19px;
+    line-height: 25px;
+    letter-spacing: 0.75px;
     color: #f3e0dc;
+    text-transform: uppercase;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover{
@@ -26,12 +30,16 @@
     content: "Hello";
 }
 
+.nav-item{
+    padding: 0;
+}
+
 p{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 19px;
-    line-height: 25px;
-    letter-spacing: 0.75px;
+    font-size: 1rem;
+    /* line-height: 25px;
+    letter-spacing: 0.75px; */
 }
 #contact{
     text-align: center;
@@ -51,7 +59,7 @@ h2{
 ul{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 1rem;
     list-style-type: none;
     padding-left: 0;
 }
@@ -93,9 +101,9 @@ pre{
     #face {   
         max-width: 50%;
     }
-    .navbar-dark .navbar-brand{
-        width: 250px;
-        font-size: 1.5rem;
+    .navbar-brand{
+        width: 300px;
+        font-size: 2rem;
     }
 
 }
