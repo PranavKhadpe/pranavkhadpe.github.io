@@ -1,0 +1,160 @@
+.navbar-dark .navbar-brand{
+    font-family: "Helvetica";
+    font-weight: bold;
+    width: 380px;
+    font-size: 2.5rem;
+    color: #f3e0dc;
+    padding: 0;
+    margin: 0;
+    letter-spacing: -2.5px;
+}
+.navbar-dark .navbar-brand:hover{
+    color: #f3e0dc;
+    
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 100;
+  
+    /* Position the tooltip */
+
+}
+
+.navbar-dark .navbar-brand:hover .tooltiptext {
+    visibility: visible;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.75px;
+    color: #f3e0dc;
+    text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: white;
+}
+
+.navbar-toggler-icon{
+    color: white;
+    content: "Hello";
+}
+
+.nav-item{
+    padding: 0;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    /* line-height: 25px;
+    letter-spacing: 0.75px; */
+}
+#contact{
+    text-align: center;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #5c2018;
+    line-height: 25px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+ul{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li{
+    padding-bottom: 10px;
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+    color: #5c2018;
+    font-weight: 400;
+}
+
+a:hover{
+    color:  #5c2018;
+    text-decoration: none;
+}
+
+pre{
+    display: flex;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.pub{
+    margin-bottom: 20px; 
+}
+
+.paperimg{
+    height: 150px;
+    width: 3000px;
+    object-fit: scale-down;
+
+}
+
+
+@media (max-width: 720px) {
+    #face {   
+        max-width: 50%;
+    }
+    .navbar-dark .navbar-brand{
+        width: 300px;
+        font-size: 2rem;
+    }
+
+}
+
+#susegad{
+    padding-bottom:0; 
+}
+
+#face{
+    border-radius: 20px;
+}
+
+.navbar{
+    background-color: #bc4639;
+    color: white;
+}
+
+#connect{
+    text-align: center;
+    color: #5c2018;
+}
+
+.news{
+    height: 328px;
+    overflow: auto;
+
+}
+
+/* .card .card-body{
+    resize: none;
+    font-size: 9px;
+} */
