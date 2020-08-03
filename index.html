@@ -48,7 +48,7 @@
                     <img src="assets/images/hover1.jpg" id="face" class="img-fluid px-auto my-4" alt="">
                 </div>
                 <div id="contact">
-                    <p>pranav.khadpe [at] gmail.com</p> 
+                    <p>pkhadpe [at] cs.cmu.edu</p> 
                 </div>
                 <div id="connect">
                     <a href="https://twitter.com/PranavKhadpe"><i class="fab fa-twitter-square fa-2x"></i></a> <a href="https://www.linkedin.com/in/pranav-khadpe-8b406a103/"><i class="fab fa-linkedin fa-2x"></i></a> <a href="https://scholar.google.com/citations?user=1sljguEAAAAJ&hl=en"><i class="ai ai-google-scholar-square ai-2x"></i></a> <a href="https://github.com/PranavKhadpe"><i class="fab fa-github-square fa-2x"></i></a>
@@ -73,7 +73,7 @@
                         <div class="col-md-9">
                             <p><a href="">Conceptual Metaphors Impact Perceptions of Human-AI Collaboration</a><br>
                                 <b>Pranav Khadpe</b>, Ranjay Krishna, Li Fei-Fei, Jeff Hancock, Michael Bernstein<br>
-                                CSCW, 2020 (<i>in submission</i>)<br>
+                                CSCW, 2020
                             </p>
                         </div>
                     </div>
@@ -89,14 +89,14 @@
                                 <a class="btn btn-secondary btn-sm" href="assets/publication/CSCW-2020-CodeMix.pdf" role="button">
                                         Paper
                                 </a>
-                                <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#bib-cscw1" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    BibTeX
-                                </a>
+                                <button id="button-cscw1" class="btn btn-primary btn-sm">
+                                    Copy BibTeX
+                                </button>
                                 <!-- <button class="btn btn-primary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                                     Questions and Criticisms
                                 </button> -->
                             </p>
-<pre xml:space="preserve" class="collapse" id="bib-cscw1" style="font-family: monospace; font-size: 12px; white-space: pre;">
+                            <textarea readonly class="form-control" rows="5" id="bib-cscw1" style="opacity:0.01; height:0; position: absolute; z-index:-1;overflow:hidden; font-family:monospace;font-size:9px;resize:none;">
 @article{10.1145/3392846,
     author = {Bawa, Anshul and Khadpe, Pranav and Joshi, Pratik and Bali, Kalika and Choudhury, Monojit},
     title = {Do Multilingual Users Prefer Chat-Bots That Code-Mix? Let’s Nudge and Find Out!},
@@ -112,9 +112,9 @@
     month = may,
     articleno = {041},
     numpages = {23},
-    keywords = {multilingual interfaces, code-mixing, human-agent interaction, intelligent personal assistants, human-centered ai}
-    }      
-</pre>
+    keywords = {multilingual interfaces, human-agent interaction, code-mixing, intelligent personal assistants, human-centered ai}
+}                             
+                            </textarea>      
                             <!-- <div class="collapse" id="collapseExample">
                             <div class="card card-body">
                                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
@@ -134,11 +134,11 @@
                                 <a class="btn btn-secondary btn-sm" href="https://www.aaai.org/ojs/index.php/HCOMP/article/view/5282" role="button">
                                         Paper
                                 </a>
-                                <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#bib-hcomp" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    BibTeX
-                                </a>
+                                <button id="button-hcomp1" class="btn btn-primary btn-sm">
+                                    Copy BibTeX
+                                </button>
                             </p>
-<pre xml:space="preserve" class="collapse" id="bib-hcomp" style="font-family: monospace; font-size: 12px; white-space: pre;">
+                            <textarea readonly class="form-control" rows="5" id="bib-hcomp1" style="opacity:0.01; height:0; position: absolute; z-index:-1;overflow:hidden; font-family:monospace;font-size:9px;resize:none;">
 @inproceedings{park2019ai,
     title={AI-Based Request Augmentation to Increase Crowdsourcing Participation},
     author={Park, Junwon and Krishna, Ranjay and Khadpe, Pranav and Fei-Fei, Li and Bernstein, Michael},
@@ -148,7 +148,7 @@
     pages={115--124},
     year={2019}
 }
-</pre>
+                            </textarea> 
                         </div>
                     </div>
 
@@ -157,6 +157,9 @@
                 <div class="border-secondary">
                     <h2>News</h2>
                     <ul class="news">
+                        <li>
+                            [Jul '20'] New paper accepted at CSCW on understanding the causal effect of metaphors associated with AI agents on user experiences and user attitudes towards them.
+                        </li>
                         <li>
                             [May '20] Defended my Masters Thesis at IIT Kharagpur
                         </li>
@@ -177,6 +180,19 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+    <script>
+    function copyContent(elementID, buttonID) {
+        const ele = document.getElementById(elementID);
+        document.getElementById(buttonID).innerHTML = "Copied";
+        ele.select();
+        document.execCommand('copy'); 
+        ele.blur();
+        setTimeout(function(){ document.getElementById(buttonID).innerHTML = "Copy BibTeX"; }, 1000);
+    }
+    document.querySelector("#button-cscw1").addEventListener("click", e => copyContent("bib-cscw1", "button-cscw1"));
+    document.querySelector("#button-hcomp1").addEventListener("click", e => copyContent("bib-hcomp1", "button-hcomp1"));
+    </script>
     <!-- <script type="text/javascript">
         $("#face").mouseover(function(){
             $("#face").attr("src","assets/images/onhover.jpg");
