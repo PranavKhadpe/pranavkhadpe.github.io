@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-9 pt-4">
-                    <p>I am a first year PhD student in the <a href="https://www.hcii.cmu.edu/">Human-Computer Interaction Institute</a> at Carnegie Mellon University, where I am advised by <a href="http://www.cs.cmu.edu/~chinmayk/">Chinmay Kulkarni</a>. I also work closely with <a href="https://hcii.cmu.edu/people/geoff-kaufman">Geoff Kaufman</a>.
+                    <p>I am a first year PhD student in the <a href="https://www.hcii.cmu.edu/">Human-Computer Interaction Institute</a> at Carnegie Mellon University, where I am co-advised by <a href="http://www.cs.cmu.edu/~chinmayk/">Chinmay Kulkarni</a> and <a href="https://hcii.cmu.edu/people/geoff-kaufman">Geoff Kaufman</a>.
                         
                     </p>
                     <p>
@@ -84,7 +84,24 @@
                                 <a class="btn btn-secondary btn-sm" href="assets/publication/CSCW-2020-Metaphors.pdf" role="button">
                                         Paper
                                 </a>
+                                <a class="btn btn-info btn-sm" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Video
+                                </a>
+                                <button id="button-cscw2" class="btn btn-primary btn-sm">
+                                    Copy BibTeX
+                                </button>
                             </p>
+                            <textarea readonly class="form-control" rows="5" id="bib-cscw2" style="opacity:0.01; height:0; position: absolute; z-index:-1;overflow:hidden; font-family:monospace;font-size:9px;resize:none;">
+@article{khadpe2020conceptual,
+    title={Conceptual Metaphors Impact Perceptions of Human-AI Collaboration},
+    author={Khadpe, Pranav and Krishna, Ranjay and Fei-Fei, Li and Hancock, Jeffrey and Bernstein, Michael},
+    journal={arXiv preprint arXiv:2008.02311},
+    year={2020}
+}                            
+                            </textarea>  
+                            <div class="collapse" id="collapseExample">
+                                    <iframe src="https://player.vimeo.com/video/461357634" width="540" height="360" style="border: solid 1px #dee2e6;" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                     <div class="row pub">
@@ -161,7 +178,6 @@
                             </textarea> 
                         </div>
                     </div>
-
             </div>
             <div class="col-lg-4">
                 <div class="border-secondary">
@@ -218,6 +234,7 @@
     }
     document.querySelector("#button-cscw1").addEventListener("click", e => copyContent("bib-cscw1", "button-cscw1"));
     document.querySelector("#button-hcomp1").addEventListener("click", e => copyContent("bib-hcomp1", "button-hcomp1"));
+    document.querySelector("#button-cscw2").addEventListener("click", e => copyContent("bib-cscw2", "button-cscw2"));
     </script>
     <!-- <script type="text/javascript">
         $("#face").mouseover(function(){
