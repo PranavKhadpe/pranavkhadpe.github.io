@@ -146,6 +146,7 @@ pre{
 @media (max-width: 720px) {
     #face {   
         max-width: 50%;
+        align-self: flex-start; 
     }
     .navbar-dark .navbar-brand{
         width: 300px;
@@ -160,6 +161,7 @@ pre{
 
 #face{
     border-radius: 20px;
+    align-self: flex-start; 
 }
 
 .navbar{
